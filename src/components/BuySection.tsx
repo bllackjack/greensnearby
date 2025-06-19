@@ -73,7 +73,7 @@ const BuySection = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="flex-1 px-4 py-3 border-2 border-[#244709]  rounded-lg"
+              className="flex-1 px-4 py-3 border-2 border-[#244709] rounded-lg"
             />
             <Button
               type="submit"

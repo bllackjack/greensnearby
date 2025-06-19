@@ -13,15 +13,15 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#89F336] backdrop-blur-sm border-b border-sage-green shadow-sm">
+    <nav className="sticky top-0 z-50 bg-gradient-to-r from-green-700 via-green-600 to-green-500 backdrop-blur-sm border-b border-sage-green shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20 ">
           {/* Logo */}
           <div className="flex justify-between items-center ">
           
         
-          <img src="/logo.gif" alt="Logo" className="h-16 w-auto" />
-          <h1 className="text-2xl font-bold text-[#244709] ">
+          <img src="/logo.gif" alt="Logo" className="h-20 w-auto" />
+          <h1 className="text-2xl font-bold text-[#ffff] ">
               GreensNearBy
             </h1>
          
@@ -35,7 +35,7 @@ const Navbar = () => {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-[#244709] hover:text-[#244709] transition-colors duration-200 px-3 py-2 text-sm font-medium"
+                  className="text-[#ffff] hover:text-[#ffff] transition-colors duration-200 px-3 py-2 text-m font-medium"
                 >
                   {link.label}
                 </a>
@@ -43,20 +43,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Desktop CTAs */}
-          {/* <div className="hidden md:flex items-center space-x-4">
-            <Button
-              variant="outline"
-              className="border-forest-green text-forest-green hover:bg-forest-green hover:text-white transition-all duration-200"
-            >
-              Find Produce
-            </Button>
-            <Button
-              className="bg-accent-berry hover:bg-accent-berry/90 text-white hover:scale-105 transition-all duration-200"
-            >
-              Become a Grower
-            </Button>
-          </div> */}
+          
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -78,7 +65,7 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-sage-green">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#DDFFBB] border-t border-sage-green overflow-hidden">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
@@ -89,19 +76,7 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              {/* <div className="pt-4 pb-2 space-y-2">
-                <Button
-                  variant="outline"
-                  className="w-full border-forest-green text-forest-green hover:bg-forest-green hover:text-white"
-                >
-                  Find Produce
-                </Button>
-                <Button
-                  className="w-full bg-accent-berry hover:bg-accent-berry/90 text-white"
-                >
-                  Become a Grower
-                </Button>
-              </div> */}
+              
             </div>
           </div>
         )}

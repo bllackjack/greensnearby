@@ -39,7 +39,7 @@ const FormPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#89F336] to-earthy-beige/30">
+    <div className="min-h-screen bg-gradient-to-br from-[#C7E9B0] to-earthy-beige/30">
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="mb-6">
           <Button
@@ -53,7 +53,7 @@ const FormPage = () => {
         </div>
         
         <div className="bg-white rounded-xl shadow-xl p-6">
-          <h1 className="text-3xl font-bold text-[#244709] mb-6 text-center">
+          <h1 className="font-monster text-3xl font-bold text-[#244709] mb-6 text-center">
             Become a Grower
           </h1>
           <div className="overflow-y-auto">

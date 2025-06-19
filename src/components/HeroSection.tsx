@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -95,16 +94,16 @@ const HeroSection = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="absolute inset-0 flex items-center justify-center z-10">
-        <div className="text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight hero-headline">
+      <div className="absolute inset-0 flex items-center justify-start z-10">
+        <div className="bg-white/30 backdrop-blur-md p-8 rounded-3xl shadow-lg md:ml-6 md:ml-12  text-left max-w-m md:max-w-l">
+          <h1 className="font-monster text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight hero-headline text-gray-900">
             Your Neighborhood's
             <br />
             <span className="text-harvest-gold">Freshest Organic</span>
             <br />
             Harvest
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto hero-tagline opacity-90">
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl hero-tagline opacity-90 text-gray-900">
             Grown with Love, Delivered to Your Door
           </p>
         </div>

@@ -40,7 +40,7 @@ const SellSection = () => {
   ];
 
   return (
-    <section id="sell" className="py-20 bg-gradient-to-br from-[#89F336] to-earthy-beige/30">
+    <section id="sell" className="py-20 bg-gradient-to-br from-[#C7E9B0] to-earthy-beige/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#244709] mb-6 sell-headline">
